@@ -11,6 +11,10 @@ class Student{
         this.year = year;
     }
 
+    public void setName(String name){
+        this.name = name;
+    }
+
     public String toString(){
         return "Student's name: " + name + ", age: " + age + ", program: " + program + ", year: " + year;
     }
@@ -20,6 +24,8 @@ class Student{
 public class Main {
     public static void main(String[] args) {
         Student shpend = new Student("Shpat Aliu", 44, "CS", 2);
+        System.out.println(shpend.toString());
+        shpend.setName("Shpend Aliu");
         System.out.println(shpend.toString());
     }
 }
